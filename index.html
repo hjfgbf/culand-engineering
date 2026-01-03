@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Culand Engineering | Machinery & Technology Trading</title>
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="fixed w-full bg-white/90 backdrop-blur border-b border-blue-100 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+      <!-- LOGO -->
+      <img src="assets/logo.png" class="h-[60px] md:h-[80px]" />
+
+      <!-- DESKTOP NAV -->
+      <nav class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#products" class="hover:text-blue-600">Services</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+
+      <!-- MOBILE BUTTON -->
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+
+      <!-- CTA -->
+      <button class="hidden md:block bg-blue-600 text-white px-4 py-2 rounded-md">
+        <a href="#contact"> Get Quote</a>
+      </button>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+      <nav class="flex flex-col p-4 space-y-3 text-sm">
+        <a href="#home">Home</a>
+        <a href="#products">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    document.getElementById("menuBtn").onclick = () => {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    };
+  </script>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="bg-blue-50 pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+
+      <div>
+        <span class="text-blue-600 text-sm font-semibold uppercase">
+          Engineering & Technology Trading
+        </span>
+
+        <h2 class="text-3xl md:text-5xl font-bold mt-4 leading-tight">
+          Reliable Machinery &
+          <span class="text-blue-600">IT Solutions</span>
+        </h2>
+
+        <p class="text-gray-600 mt-6">
+          Supplying industrial machinery, laptops, and computer systems
+          across India.
+        </p>
+
+        <div class="mt-8 flex gap-4 flex-wrap">
+          <a href="#products">
+            <button class="bg-blue-600 text-white px-6 py-3 rounded-md">
+              View Services
+            </button>
+          </a>
+          <a href="#contact">
+            <button class="border border-blue-600 text-blue-600 px-6 py-3 rounded-md">
+              Contact Us
+            </button>
+          </a>
+
+        </div>
+      </div>
+
+      <img
+        src="https://media.istockphoto.com/id/1471974259/photo/trader-investor-analyst-using-mobile-phone-app-for-cryptocurrency-stock-market-analyzing.jpg?s=612x612&w=0&k=20&c=09U8BfNRXsEZACX8gBczmO3Wi1TulLNtp5NZREQIh80="
+        class="rounded-xl shadow-lg w-full" />
+    </div>
+  </section>
+
+  <!-- ================= TRUST ================= -->
+  <section class="py-12 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <div class="bg-blue-50 p-4 rounded-lg">✔ Genuine Products</div>
+      <div class="bg-blue-50 p-4 rounded-lg">✔ Industry Standards</div>
+      <div class="bg-blue-50 p-4 rounded-lg">✔ Best Pricing</div>
+      <div class="bg-blue-50 p-4 rounded-lg">✔ Support</div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="products" class="bg-blue-50 py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">
+        Our <span class="text-blue-600">Services</span>
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white rounded-xl shadow">
+          <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837"
+            class="h-48 w-full object-cover rounded-t-xl">
+          <div class="p-6">
+            <h3 class="font-semibold">Industrial Machinery</h3>
+            <p class="text-gray-600 text-sm mt-2">Manufacturing-grade machines.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow">
+          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+            class="h-48 w-full object-cover rounded-t-xl">
+          <div class="p-6">
+            <h3 class="font-semibold">Laptops</h3>
+            <p class="text-gray-600 text-sm mt-2">Business & professional laptops.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow">
+          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-All-in-One_1040x585?scl=1"
+            class="h-48 w-full object-cover rounded-t-xl">
+          <div class="p-6">
+            <h3 class="font-semibold">Computers</h3>
+            <p class="text-gray-600 text-sm mt-2">Office systems & servers.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+
+      <img src="https://www.avaccess.com/wp-content/uploads/2024/10/AVA004241-1900x1069.jpg" alt="Culand Engineering"
+        class="rounded-xl shadow w-full">
+
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          About <span class="text-blue-600">Culand Engineering</span>
+        </h2>
+
+        <p class="text-gray-600 mb-4 leading-relaxed">
+          <strong>Culand Engineering</strong> is a Chennai-based
+          engineering and technology trading company, committed to
+          supplying high-quality industrial machinery, laptops,
+          computers, and IT solutions to businesses across India.
+          We serve manufacturing units, corporate offices, startups,
+          and institutions with reliable and cost-effective products.
+        </p>
+
+
+
+        <div class="grid grid-cols-2 gap-4 text-sm">
+          <div class="bg-blue-50 p-4 rounded-lg">
+            ✔ Quality-Certified Products
+          </div>
+          <div class="bg-blue-50 p-4 rounded-lg">
+            ✔ Trusted Supplier Network
+          </div>
+          <div class="bg-blue-50 p-4 rounded-lg">
+            ✔ Competitive Pricing
+          </div>
+          <div class="bg-blue-50 p-4 rounded-lg">
+            ✔ Reliable After-Sales Support
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= WHY CHOOSE US ================= -->
+  <section class="bg-blue-50 py-16 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4">
+
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">
+        Why Choose <span class="text-blue-600">Culand Engineering</span>
+      </h2>
+
+      <p class="text-center text-gray-600 max-w-3xl mx-auto mb-10 sm:mb-14 text-sm sm:text-base">
+        We combine industry expertise, trusted supplier networks,
+        and customer-focused service to deliver reliable trading
+        solutions for machinery and IT requirements.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+
+        <!-- Item 1: Trusted Suppliers -->
+        <div class="bg-white p-5 sm:p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-10 sm:h-12 w-10 sm:w-12 text-blue-600 mb-3 sm:mb-4"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12l2 2l4-4M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10z" />
+          </svg>
+          <h3 class="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Trusted Suppliers</h3>
+          <p class="text-gray-600 text-xs sm:text-sm">
+            Verified manufacturers & authorized distributors for product authenticity.
+          </p>
+        </div>
+
+        <!-- Item 2: Industry Expertise -->
+        <div class="bg-white p-5 sm:p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-10 sm:h-12 w-10 sm:w-12 text-blue-600 mb-3 sm:mb-4"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19.4 15a1.66 1.66 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.66 1.66 0 0 0-1.82-.33a1.66 1.66 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.06a1.66 1.66 0 0 0-1-1.51a1.66 1.66 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.66 1.66 0 0 0 .33-1.82a1.66 1.66 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.06a1.66 1.66 0 0 0 1.51-1a1.66 1.66 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.66 1.66 0 0 0 1.82.33h.01a1.66 1.66 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.06a1.66 1.66 0 0 0 1 1.51a1.66 1.66 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.66 1.66 0 0 0-.33 1.82v.01a1.66 1.66 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.06a1.66 1.66 0 0 0-1.51 1z" />
+          </svg>
+          <h3 class="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Industry Expertise</h3>
+          <p class="text-gray-600 text-xs sm:text-sm">
+            Strong understanding of industrial & IT needs across sectors.
+          </p>
+        </div>
+
+        <!-- Item 3: Competitive Pricing -->
+        <div class="bg-white p-5 sm:p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-10 sm:h-12 w-10 sm:w-12 text-blue-600 mb-3 sm:mb-4"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 2v2m0 16v2m10-10h-2M4 12H2m16.364-6.364l-1.414 1.414M6.05 17.95l-1.414 1.414M17.95 17.95l-1.414-1.414M6.05 6.05L4.636 7.464" />
+          </svg>
+          <h3 class="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Competitive Pricing</h3>
+          <p class="text-gray-600 text-xs sm:text-sm">
+            Cost-effective solutions with maximum value.
+          </p>
+        </div>
+
+        <!-- Item 4: Reliable Support -->
+        <div class="bg-white p-5 sm:p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-10 sm:h-12 w-10 sm:w-12 text-blue-600 mb-3 sm:mb-4"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M18 8a6 6 0 0 0-12 0v5a3 3 0 0 0 3 3h1v-5H9v5h6v-5h-1v5h1a3 3 0 0 0 3-3V8z" />
+          </svg>
+          <h3 class="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Reliable Support</h3>
+          <p class="text-gray-600 text-xs sm:text-sm">
+            Pre-sales & after-sales support for smooth business operations.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section class="bg-white py-20">
+    <div class="max-w-5xl mx-auto px-4">
+
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+        Frequently Asked <span class="text-blue-600">Questions</span>
+      </h2>
+
+      <div class="space-y-6">
+
+        <div class="border border-blue-100 rounded-lg p-5">
+          <h3 class="font-semibold mb-2">
+            What products does Culand Engineering supply?
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            We supply industrial machinery, laptops, desktop computers,
+            workstations, and IT-related systems for factories,
+            offices, and commercial businesses.
+          </p>
+        </div>
+
+        <div class="border border-blue-100 rounded-lg p-5">
+          <h3 class="font-semibold mb-2">
+            Do you provide after-sales support?
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Yes. We offer complete after-sales assistance including
+            warranty guidance, technical support, and coordination
+            with authorized service providers.
+          </p>
+        </div>
+
+        <div class="border border-blue-100 rounded-lg p-5">
+          <h3 class="font-semibold mb-2">
+            Do you handle bulk or corporate orders?
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Absolutely. We specialize in bulk and corporate orders
+            and provide competitive pricing for long-term business
+            requirements.
+          </p>
+        </div>
+
+        <div class="border border-blue-100 rounded-lg p-5">
+          <h3 class="font-semibold mb-2">
+            Which locations do you serve?
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            We are based in Chennai and supply products across
+            Tamil Nadu and other parts of India.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="bg-blue-50 py-20">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+
+      <form class="bg-white p-6 rounded-xl shadow space-y-4">
+        <input class="w-full p-3 border rounded" placeholder="Name">
+        <input class="w-full p-3 border rounded" placeholder="Email">
+        <input class="w-full p-3 border rounded" placeholder="Phone">
+        <textarea class="w-full p-3 border rounded" placeholder="Requirement"></textarea>
+        <button class="w-full bg-blue-600 text-white py-3 rounded">
+          Submit
+        </button>
+      </form>
+
+      <iframe class="w-full h-[350px] rounded-xl shadow"
+        src="https://www.google.com/maps?q=06th+Floor,+Premier+House-1,+S.G.Road,+Bodakdev,+Ahmedabad,+Gujarat+380054&output=embed"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="bg-white text-gray-700 border-t border-blue-100">
+    <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8 text-sm">
+
+      <!-- COMPANY -->
+      <div>
+        <img src="assets/logo.png" alt="Culand Engineering Logo" class="h-[60px] md:h-[80px] mb-2" />
+        <p class="text-gray-600 leading-relaxed">
+          Culand Engineering is a trusted trading partner for
+          industrial machinery, laptops, and computer systems,
+          delivering quality, value, and reliability to businesses
+          across India.
+        </p>
+      </div>
+
+      <!-- SERVICES -->
+      <div>
+        <h3 class="font-semibold text-gray-900 text-lg mb-4">
+          Our Services
+        </h3>
+        <ul class="space-y-2 text-gray-600">
+          <li>Industrial Machinery</li>
+          <li>Laptops & Notebooks</li>
+          <li>Computers & Workstations</li>
+          <li>IT Infrastructure Solutions</li>
+        </ul>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div>
+        <h3 class="font-semibold text-gray-900 text-lg mb-4">
+          Quick Links
+        </h3>
+        <ul class="space-y-2">
+          <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-600">About</a></li>
+          <li><a href="#products" class="hover:text-blue-600">Services</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div>
+        <h3 class="font-semibold text-gray-900 text-lg mb-4">
+          Contact Info
+        </h3>
+
+        <!-- Location -->
+        <div class="flex items-center mb-2">
+          <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
+          <span class="text-gray-600"> 06th Floor, Premier House-1,<br>
+            S.G. Road, Bodakdev,<br>
+            Ahmedabad, Ahmedabad,<br>
+            Gujarat - 380054</span>
+        </div>
+
+        <!-- Email -->
+        <div class="flex items-center mb-2">
+          <i class="fas fa-envelope text-blue-600 mr-2"></i>
+          <span class="text-gray-600">culandengineering@gmail.com</span>
+        </div>
+
+        <!-- Phone -->
+        <div class="flex items-center">
+          <i class="fas fa-phone-alt text-blue-600 mr-2"></i>
+          <span class="text-gray-600">+91 79908 08495</span>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="border-t border-blue-100 text-center py-4 text-xs text-gray-500">
+      © 2026 Culand Engineering. All Rights Reserved.
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
